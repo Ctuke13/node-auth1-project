@@ -14,7 +14,6 @@ function restricted(req, res, next) {
   } else {
     next({ status: 401, message: "You shall not pass!" });
   }
-  next();
 }
 
 /*
